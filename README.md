@@ -1,4 +1,4 @@
-Real-Time Object Detection with OpenCV and SSD MobileNet v3
+#Real-Time Object Detection with OpenCV and SSD MobileNet v3
 This project demonstrates real-time object detection using OpenCV and a pre-trained SSD MobileNet v3 deep learning model. It can process live video feeds from a webcam or analyze objects within a video file.
 
 Features
