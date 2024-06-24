@@ -40,4 +40,14 @@ Run with Webcam:
 
 ```bash
 python object_detector.py -source 1
+```
 
+Run with Video File:
+```bash
+python object_detector.py -source 0 -video_path /path/to/your/video.mp4
+```
+
+## Customizations
+
+* Detection Threshold: Adjust the thresh variable in the ObjectDetection class to control the confidence level required for object detection.
+* Non-Maximum Suppression Threshold: Modify the nms_threshold variable to adjust how aggressively overlapping bounding boxes are suppressed.
