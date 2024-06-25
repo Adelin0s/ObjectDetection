@@ -57,6 +57,8 @@ class ObjectDetection:
             indices = cv2.dnn.NMSBoxes(bbox, confs, self.thresh, self.nms_threshold)
             if len(classIds) != 0:
                 for i in indices:
+                    if "truck" != self.classNames[classIds[i] - 1]:
+                        continue
                     box = bbox[i]
                     confidence = str(round(confs[i], 2))
                     color = self.Colors[classIds[i] - 1]
